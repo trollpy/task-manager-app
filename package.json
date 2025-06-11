@@ -1,5 +1,6 @@
 {
   "name": "task-manager-app",
+  "homepage": "https://trollpy.github.io/task-manager-app/",
   "private": true,
   "version": "0.0.0",
   "type": "module",
