@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    @apply transition-colors duration-300;
+  }
+}
+
+@layer components {
+  .task-item {
+    @apply transform transition-all duration-200 hover:scale-[1.02] hover:shadow-lg;
+  }
+  
+  .completed-task {
+    @apply opacity-60 line-through;
+  }
+  
+  .filter-button {
+    @apply px-4 py-2 rounded-lg font-medium transition-all duration-200;
+  }
+  
+  .filter-button.active {
+    @apply bg-blue-600 text-white shadow-md;
+  }
+  
+  .filter-button:not(.active) {
+    @apply bg-gray-200 text-gray-700 hover:bg-gray-300 dark:bg-gray-700 dark:text-gray-300 dark:hover:bg-gray-600;
+  }
+}
